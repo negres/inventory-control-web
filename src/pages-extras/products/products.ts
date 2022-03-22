@@ -7,3 +7,7 @@ export interface IProducts {
   value: number;
   image?: string;
 }
+
+export interface ProductInterface {
+  product: IProducts;
+}

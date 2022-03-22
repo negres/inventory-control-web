@@ -12,7 +12,6 @@ const Home = ({ products }: HomeInterface) => {
 
 export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   const { data: { products } } = await getProducts();
-  console.log(products)
 
   return { props: { products } };
 }
